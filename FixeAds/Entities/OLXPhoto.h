@@ -10,8 +10,8 @@
 
 @interface OLXPhoto : NSObject
 
-@property (nonatomic, retain) NSString* slotId;
-@property (nonatomic, retain) NSString* width;
-@property (nonatomic, retain) NSString* height;
+@property (nonatomic, assign) NSInteger slotId;
+@property (nonatomic, assign) NSInteger width;
+@property (nonatomic, assign) NSInteger height;
 
 @end

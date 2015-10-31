@@ -17,18 +17,19 @@
 
 #pragma mark - Urls
 @property (nonatomic, retain) NSString* url;
+@property (nonatomic, retain) NSString* previewUrl;
 
 #pragma mark - OLX Ad info
 @property (nonatomic, retain) NSString* title;
 @property (nonatomic, retain) NSString* created;
 @property (nonatomic, retain) NSString* age;
-@property (nonatomic, retain) NSString* description;
+@property (nonatomic, retain) NSString* adDescription;
 
-@property (nonatomic, assign) NSInteger* highlighted;
-@property (nonatomic, assign) NSInteger* urgent;
-@property (nonatomic, assign) NSInteger* topAd;
+@property (nonatomic, assign) NSInteger highlighted;
+@property (nonatomic, assign) NSInteger urgent;
+@property (nonatomic, assign) NSInteger topAd;
 
-@property (nonatomic, assign) NSInteger* categoryId;
+@property (nonatomic, assign) NSInteger categoryId;
 
 @property (nonatomic, retain) NSArray* parameters;
 @property (nonatomic, retain) NSArray* subtitle;
@@ -36,6 +37,7 @@
 @property (nonatomic, retain) NSString* person;
 @property (nonatomic, retain) NSString* userLabel;
 @property (nonatomic, retain) NSString* userAdsId;
+@property (nonatomic, retain) NSString* userId;
 @property (nonatomic, retain) NSString* numericUserId;
 @property (nonatomic, retain) NSString* userAdsUrl;
 @property (nonatomic, retain) NSString* listLabel;
@@ -57,12 +59,16 @@
 @property (nonatomic, assign) BOOL mapShowDetailed;
 @property (nonatomic, retain) NSString* cityLabel;
 @property (nonatomic, retain) NSString* mapLocation;
-@property (nonatomic, assign) NSInteger* accurateLocation;
+@property (nonatomic, assign) BOOL accurateLocation;
 
 #pragma mark - Photos
 @property (nonatomic, retain) NSString* riakRing;
 @property (nonatomic, retain) NSString* riakKey;
 @property (nonatomic, retain) NSString* riakRev;
 @property (nonatomic, retain) NSArray* photos;
+
+#pragma mark - Photo url builders
+- (NSString*) urlWithOLXPhoto:(OLXPhoto*) olxPhoto width:(NSInteger) width andHeight:(NSInteger) height;
+- (NSString*) urlWithOLXPhoto:(OLXPhoto*) olxPhoto;
 
 @end

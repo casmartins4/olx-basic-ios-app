@@ -10,6 +10,4 @@
 
 @implementation OLXParameters
 
-@dynamic description;
-
 @end

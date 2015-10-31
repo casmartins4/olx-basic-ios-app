@@ -12,6 +12,4 @@
 
 @implementation OLXAd
 
-@dynamic description;
-
 @end
