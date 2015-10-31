@@ -23,6 +23,8 @@
 		F0CCB04E1BE51366003E39EB /* OLXParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB04D1BE51366003E39EB /* OLXParameters.m */; settings = {ASSET_TAGS = (); }; };
 		F0CCB0521BE51654003E39EB /* OLXPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0511BE51654003E39EB /* OLXPhoto.m */; settings = {ASSET_TAGS = (); }; };
 		F0CCB0561BE518AC003E39EB /* OLXResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0551BE518AB003E39EB /* OLXResponse.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB05A1BE51DFE003E39EB /* OLXResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0591BE51DFE003E39EB /* OLXResponseMapper.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB05D1BE521A1003E39EB /* OLXAdMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB05C1BE521A1003E39EB /* OLXAdMapper.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		F0CCB0511BE51654003E39EB /* OLXPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXPhoto.m; path = Entities/OLXPhoto.m; sourceTree = "<group>"; };
 		F0CCB0541BE518AB003E39EB /* OLXResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXResponse.h; path = Entities/OLXResponse.h; sourceTree = "<group>"; };
 		F0CCB0551BE518AB003E39EB /* OLXResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXResponse.m; path = Entities/OLXResponse.m; sourceTree = "<group>"; };
+		F0CCB0581BE51DFE003E39EB /* OLXResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXResponseMapper.h; path = Mappers/OLXResponseMapper.h; sourceTree = "<group>"; };
+		F0CCB0591BE51DFE003E39EB /* OLXResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXResponseMapper.m; path = Mappers/OLXResponseMapper.m; sourceTree = "<group>"; };
+		F0CCB05B1BE521A1003E39EB /* OLXAdMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXAdMapper.h; path = Mappers/OLXAdMapper.h; sourceTree = "<group>"; };
+		F0CCB05C1BE521A1003E39EB /* OLXAdMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXAdMapper.m; path = Mappers/OLXAdMapper.m; sourceTree = "<group>"; };
 		F1314E28FC9819C84CB0E625 /* Pods-FixeAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixeAds.release.xcconfig"; path = "Pods/Target Support Files/Pods-FixeAds/Pods-FixeAds.release.xcconfig"; sourceTree = "<group>"; };
 		FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FixeAds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -227,6 +233,10 @@
 		F0CCB03F1BE5081B003E39EB /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
+				F0CCB0581BE51DFE003E39EB /* OLXResponseMapper.h */,
+				F0CCB0591BE51DFE003E39EB /* OLXResponseMapper.m */,
+				F0CCB05B1BE521A1003E39EB /* OLXAdMapper.h */,
+				F0CCB05C1BE521A1003E39EB /* OLXAdMapper.m */,
 			);
 			name = Mappers;
 			sourceTree = "<group>";
@@ -449,9 +459,11 @@
 				F0CCB0391BE5045B003E39EB /* ListingViewController.m in Sources */,
 				F0CCB0561BE518AC003E39EB /* OLXResponse.m in Sources */,
 				F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */,
+				F0CCB05D1BE521A1003E39EB /* OLXAdMapper.m in Sources */,
 				F0CCB04E1BE51366003E39EB /* OLXParameters.m in Sources */,
 				F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */,
 				F0CCB03D1BE5071C003E39EB /* OLXService.m in Sources */,
+				F0CCB05A1BE51DFE003E39EB /* OLXResponseMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

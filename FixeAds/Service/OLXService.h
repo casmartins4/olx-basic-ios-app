@@ -7,17 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OLXResponse.h"
 
 @interface OLXService : NSObject
 
 + (instancetype) instance;
 
-- (void) requestInitial:(NSString*) username
-               andPassword:(NSString*) password
-             withOSVersion:(NSString*) osVersion
-            andDeviceModel:(NSString*) deviceModel
-                   success:(void (^)(PALoginResponse* loginResponse))success
-                   failure:(void (^)(NSError* error))failure;
-
+- (void) requestDataWithUrl:(NSString*) url
+                    success:(void (^)(OLXResponse* olxResponse)) success
+                    failure:(void (^)(NSError* error)) failure;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ListingViewController.h"
 #import "ListingCell.h"
+#import "OLXService.h"
 
 @interface ListingViewController ()
 
@@ -22,6 +23,12 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
     [super viewDidLoad];
 
     [self registerNibs];
+    
+    [[OLXService instance] requestDataWithUrl:nil success:^(OLXResponse *olxResponse) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
