@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B07C24A4EF402ABEFCD486 /* libPods-FixeAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */; };
+		F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFB81BE4EFB9003E39EB /* main.m */; };
+		F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */; };
+		F0CCAFBF1BE4EFB9003E39EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFBE1BE4EFB9003E39EB /* ViewController.m */; };
+		F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */; };
+		F0CCAFC41BE4EFB9003E39EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */; };
+		F0CCAFC71BE4EFB9003E39EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC51BE4EFB9003E39EB /* LaunchScreen.storyboard */; };
+		F0CCAFD21BE4EFB9003E39EB /* FixeAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFD11BE4EFB9003E39EB /* FixeAdsTests.m */; };
+		F0CCAFDD1BE4EFB9003E39EB /* FixeAdsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFDC1BE4EFB9003E39EB /* FixeAdsUITests.m */; };
+		F0CCAFEB1BE4F068003E39EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFEA1BE4F068003E39EB /* Podfile */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0CCAFCE1BE4EFB9003E39EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CCAFAC1BE4EFB9003E39EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CCAFB31BE4EFB9003E39EB;
+			remoteInfo = FixeAds;
+		};
+		F0CCAFD91BE4EFB9003E39EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CCAFAC1BE4EFB9003E39EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0CCAFB31BE4EFB9003E39EB;
+			remoteInfo = FixeAds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D78542C9F9A82DD0E7DB562 /* Pods-FixeAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixeAds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FixeAds/Pods-FixeAds.debug.xcconfig"; sourceTree = "<group>"; };
+		F0CCAFB41BE4EFB9003E39EB /* FixeAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixeAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CCAFB81BE4EFB9003E39EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0CCAFBD1BE4EFB9003E39EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F0CCAFBE1BE4EFB9003E39EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F0CCAFC11BE4EFB9003E39EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0CCAFC61BE4EFB9003E39EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0CCAFC81BE4EFB9003E39EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CCAFCD1BE4EFB9003E39EB /* FixeAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixeAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CCAFD11BE4EFB9003E39EB /* FixeAdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixeAdsTests.m; sourceTree = "<group>"; };
+		F0CCAFD31BE4EFB9003E39EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CCAFD81BE4EFB9003E39EB /* FixeAdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixeAdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CCAFDC1BE4EFB9003E39EB /* FixeAdsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixeAdsUITests.m; sourceTree = "<group>"; };
+		F0CCAFDE1BE4EFB9003E39EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CCAFEA1BE4F068003E39EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		F1314E28FC9819C84CB0E625 /* Pods-FixeAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixeAds.release.xcconfig"; path = "Pods/Target Support Files/Pods-FixeAds/Pods-FixeAds.release.xcconfig"; sourceTree = "<group>"; };
+		FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FixeAds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0CCAFB11BE4EFB9003E39EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B07C24A4EF402ABEFCD486 /* libPods-FixeAds.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CCAFCA1BE4EFB9003E39EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CCAFD51BE4EFB9003E39EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F9E7DE8AA8BE7D348762332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D78542C9F9A82DD0E7DB562 /* Pods-FixeAds.debug.xcconfig */,
+				F1314E28FC9819C84CB0E625 /* Pods-FixeAds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D04C029D2F557DD9AD32139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0CCAFAB1BE4EFB9003E39EB = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFB61BE4EFB9003E39EB /* FixeAds */,
+				F0CCAFD01BE4EFB9003E39EB /* FixeAdsTests */,
+				F0CCAFDB1BE4EFB9003E39EB /* FixeAdsUITests */,
+				F0CCAFB51BE4EFB9003E39EB /* Products */,
+				6F9E7DE8AA8BE7D348762332 /* Pods */,
+				9D04C029D2F557DD9AD32139 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0CCAFB51BE4EFB9003E39EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFB41BE4EFB9003E39EB /* FixeAds.app */,
+				F0CCAFCD1BE4EFB9003E39EB /* FixeAdsTests.xctest */,
+				F0CCAFD81BE4EFB9003E39EB /* FixeAdsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0CCAFB61BE4EFB9003E39EB /* FixeAds */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */,
+				F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */,
+				F0CCAFBD1BE4EFB9003E39EB /* ViewController.h */,
+				F0CCAFBE1BE4EFB9003E39EB /* ViewController.m */,
+				F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */,
+				F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */,
+				F0CCAFC51BE4EFB9003E39EB /* LaunchScreen.storyboard */,
+				F0CCAFC81BE4EFB9003E39EB /* Info.plist */,
+				F0CCAFEA1BE4F068003E39EB /* Podfile */,
+				F0CCAFB71BE4EFB9003E39EB /* Supporting Files */,
+			);
+			path = FixeAds;
+			sourceTree = "<group>";
+		};
+		F0CCAFB71BE4EFB9003E39EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFB81BE4EFB9003E39EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0CCAFD01BE4EFB9003E39EB /* FixeAdsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFD11BE4EFB9003E39EB /* FixeAdsTests.m */,
+				F0CCAFD31BE4EFB9003E39EB /* Info.plist */,
+			);
+			path = FixeAdsTests;
+			sourceTree = "<group>";
+		};
+		F0CCAFDB1BE4EFB9003E39EB /* FixeAdsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFDC1BE4EFB9003E39EB /* FixeAdsUITests.m */,
+				F0CCAFDE1BE4EFB9003E39EB /* Info.plist */,
+			);
+			path = FixeAdsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0CCAFB31BE4EFB9003E39EB /* FixeAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CCAFE11BE4EFB9003E39EB /* Build configuration list for PBXNativeTarget "FixeAds" */;
+			buildPhases = (
+				DB2A9722003EB79BD12D3247 /* Check Pods Manifest.lock */,
+				F0CCAFB01BE4EFB9003E39EB /* Sources */,
+				F0CCAFB11BE4EFB9003E39EB /* Frameworks */,
+				F0CCAFB21BE4EFB9003E39EB /* Resources */,
+				921AEEB75B059C3E26925EFC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixeAds;
+			productName = FixeAds;
+			productReference = F0CCAFB41BE4EFB9003E39EB /* FixeAds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0CCAFCC1BE4EFB9003E39EB /* FixeAdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CCAFE41BE4EFB9003E39EB /* Build configuration list for PBXNativeTarget "FixeAdsTests" */;
+			buildPhases = (
+				F0CCAFC91BE4EFB9003E39EB /* Sources */,
+				F0CCAFCA1BE4EFB9003E39EB /* Frameworks */,
+				F0CCAFCB1BE4EFB9003E39EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CCAFCF1BE4EFB9003E39EB /* PBXTargetDependency */,
+			);
+			name = FixeAdsTests;
+			productName = FixeAdsTests;
+			productReference = F0CCAFCD1BE4EFB9003E39EB /* FixeAdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0CCAFD71BE4EFB9003E39EB /* FixeAdsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CCAFE71BE4EFB9003E39EB /* Build configuration list for PBXNativeTarget "FixeAdsUITests" */;
+			buildPhases = (
+				F0CCAFD41BE4EFB9003E39EB /* Sources */,
+				F0CCAFD51BE4EFB9003E39EB /* Frameworks */,
+				F0CCAFD61BE4EFB9003E39EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0CCAFDA1BE4EFB9003E39EB /* PBXTargetDependency */,
+			);
+			name = FixeAdsUITests;
+			productName = FixeAdsUITests;
+			productReference = F0CCAFD81BE4EFB9003E39EB /* FixeAdsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0CCAFAC1BE4EFB9003E39EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = fixeads;
+				TargetAttributes = {
+					F0CCAFB31BE4EFB9003E39EB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					F0CCAFCC1BE4EFB9003E39EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F0CCAFB31BE4EFB9003E39EB;
+					};
+					F0CCAFD71BE4EFB9003E39EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F0CCAFB31BE4EFB9003E39EB;
+					};
+				};
+			};
+			buildConfigurationList = F0CCAFAF1BE4EFB9003E39EB /* Build configuration list for PBXProject "FixeAds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0CCAFAB1BE4EFB9003E39EB;
+			productRefGroup = F0CCAFB51BE4EFB9003E39EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0CCAFB31BE4EFB9003E39EB /* FixeAds */,
+				F0CCAFCC1BE4EFB9003E39EB /* FixeAdsTests */,
+				F0CCAFD71BE4EFB9003E39EB /* FixeAdsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0CCAFB21BE4EFB9003E39EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CCAFC71BE4EFB9003E39EB /* LaunchScreen.storyboard in Resources */,
+				F0CCAFC41BE4EFB9003E39EB /* Assets.xcassets in Resources */,
+				F0CCAFEB1BE4F068003E39EB /* Podfile in Resources */,
+				F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CCAFCB1BE4EFB9003E39EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CCAFD61BE4EFB9003E39EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		921AEEB75B059C3E26925EFC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FixeAds/Pods-FixeAds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB2A9722003EB79BD12D3247 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0CCAFB01BE4EFB9003E39EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CCAFBF1BE4EFB9003E39EB /* ViewController.m in Sources */,
+				F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */,
+				F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CCAFC91BE4EFB9003E39EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CCAFD21BE4EFB9003E39EB /* FixeAdsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0CCAFD41BE4EFB9003E39EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CCAFDD1BE4EFB9003E39EB /* FixeAdsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0CCAFCF1BE4EFB9003E39EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0CCAFB31BE4EFB9003E39EB /* FixeAds */;
+			targetProxy = F0CCAFCE1BE4EFB9003E39EB /* PBXContainerItemProxy */;
+		};
+		F0CCAFDA1BE4EFB9003E39EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0CCAFB31BE4EFB9003E39EB /* FixeAds */;
+			targetProxy = F0CCAFD91BE4EFB9003E39EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CCAFC11BE4EFB9003E39EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0CCAFC51BE4EFB9003E39EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0CCAFC61BE4EFB9003E39EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0CCAFDF1BE4EFB9003E39EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0CCAFE01BE4EFB9003E39EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0CCAFE21BE4EFB9003E39EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D78542C9F9A82DD0E7DB562 /* Pods-FixeAds.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FixeAds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0CCAFE31BE4EFB9003E39EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1314E28FC9819C84CB0E625 /* Pods-FixeAds.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FixeAds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F0CCAFE51BE4EFB9003E39EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FixeAdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FixeAds.app/FixeAds";
+			};
+			name = Debug;
+		};
+		F0CCAFE61BE4EFB9003E39EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FixeAdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAdsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FixeAds.app/FixeAds";
+			};
+			name = Release;
+		};
+		F0CCAFE81BE4EFB9003E39EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FixeAdsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FixeAds;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F0CCAFE91BE4EFB9003E39EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FixeAdsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAdsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FixeAds;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0CCAFAF1BE4EFB9003E39EB /* Build configuration list for PBXProject "FixeAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CCAFDF1BE4EFB9003E39EB /* Debug */,
+				F0CCAFE01BE4EFB9003E39EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CCAFE11BE4EFB9003E39EB /* Build configuration list for PBXNativeTarget "FixeAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CCAFE21BE4EFB9003E39EB /* Debug */,
+				F0CCAFE31BE4EFB9003E39EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CCAFE41BE4EFB9003E39EB /* Build configuration list for PBXNativeTarget "FixeAdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CCAFE51BE4EFB9003E39EB /* Debug */,
+				F0CCAFE61BE4EFB9003E39EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CCAFE71BE4EFB9003E39EB /* Build configuration list for PBXNativeTarget "FixeAdsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CCAFE81BE4EFB9003E39EB /* Debug */,
+				F0CCAFE91BE4EFB9003E39EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0CCAFAC1BE4EFB9003E39EB /* Project object */;
+}
