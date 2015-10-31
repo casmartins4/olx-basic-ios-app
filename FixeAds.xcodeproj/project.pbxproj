@@ -10,13 +10,19 @@
 		04B07C24A4EF402ABEFCD486 /* libPods-FixeAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */; };
 		F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFB81BE4EFB9003E39EB /* main.m */; };
 		F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */; };
-		F0CCAFBF1BE4EFB9003E39EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFBE1BE4EFB9003E39EB /* ViewController.m */; };
 		F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */; };
 		F0CCAFC41BE4EFB9003E39EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */; };
-		F0CCAFC71BE4EFB9003E39EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC51BE4EFB9003E39EB /* LaunchScreen.storyboard */; };
 		F0CCAFD21BE4EFB9003E39EB /* FixeAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFD11BE4EFB9003E39EB /* FixeAdsTests.m */; };
 		F0CCAFDD1BE4EFB9003E39EB /* FixeAdsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFDC1BE4EFB9003E39EB /* FixeAdsUITests.m */; };
 		F0CCAFEB1BE4F068003E39EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFEA1BE4F068003E39EB /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		F0CCB0391BE5045B003E39EB /* ListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0381BE5045B003E39EB /* ListingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB03D1BE5071C003E39EB /* OLXService.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB03C1BE5071C003E39EB /* OLXService.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB0461BE508E3003E39EB /* ListingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0441BE508E3003E39EB /* ListingCell.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB0471BE508E3003E39EB /* ListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0CCB0451BE508E3003E39EB /* ListingCell.xib */; settings = {ASSET_TAGS = (); }; };
+		F0CCB04A1BE5109F003E39EB /* OLXAd.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0491BE5109F003E39EB /* OLXAd.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB04E1BE51366003E39EB /* OLXParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB04D1BE51366003E39EB /* OLXParameters.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB0521BE51654003E39EB /* OLXPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0511BE51654003E39EB /* OLXPhoto.m */; settings = {ASSET_TAGS = (); }; };
+		F0CCB0561BE518AC003E39EB /* OLXResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCB0551BE518AB003E39EB /* OLXResponse.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +48,8 @@
 		F0CCAFB81BE4EFB9003E39EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0CCAFBD1BE4EFB9003E39EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0CCAFBE1BE4EFB9003E39EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F0CCAFC11BE4EFB9003E39EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F0CCAFC61BE4EFB9003E39EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0CCAFC81BE4EFB9003E39EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CCAFCD1BE4EFB9003E39EB /* FixeAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixeAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CCAFD11BE4EFB9003E39EB /* FixeAdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixeAdsTests.m; sourceTree = "<group>"; };
@@ -55,6 +58,21 @@
 		F0CCAFDC1BE4EFB9003E39EB /* FixeAdsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixeAdsUITests.m; sourceTree = "<group>"; };
 		F0CCAFDE1BE4EFB9003E39EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CCAFEA1BE4F068003E39EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		F0CCB0371BE5045B003E39EB /* ListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListingViewController.h; path = Listing/ListingViewController.h; sourceTree = "<group>"; };
+		F0CCB0381BE5045B003E39EB /* ListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListingViewController.m; path = Listing/ListingViewController.m; sourceTree = "<group>"; };
+		F0CCB03B1BE5071C003E39EB /* OLXService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXService.h; path = Service/OLXService.h; sourceTree = "<group>"; };
+		F0CCB03C1BE5071C003E39EB /* OLXService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXService.m; path = Service/OLXService.m; sourceTree = "<group>"; };
+		F0CCB0431BE508E3003E39EB /* ListingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListingCell.h; path = Listing/Cell/ListingCell.h; sourceTree = "<group>"; };
+		F0CCB0441BE508E3003E39EB /* ListingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListingCell.m; path = Listing/Cell/ListingCell.m; sourceTree = "<group>"; };
+		F0CCB0451BE508E3003E39EB /* ListingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListingCell.xib; path = Listing/Cell/ListingCell.xib; sourceTree = "<group>"; };
+		F0CCB0481BE5109F003E39EB /* OLXAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXAd.h; path = Entities/OLXAd.h; sourceTree = "<group>"; };
+		F0CCB0491BE5109F003E39EB /* OLXAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXAd.m; path = Entities/OLXAd.m; sourceTree = "<group>"; };
+		F0CCB04C1BE51366003E39EB /* OLXParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLXParameters.h; sourceTree = "<group>"; };
+		F0CCB04D1BE51366003E39EB /* OLXParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLXParameters.m; sourceTree = "<group>"; };
+		F0CCB0501BE51654003E39EB /* OLXPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXPhoto.h; path = Entities/OLXPhoto.h; sourceTree = "<group>"; };
+		F0CCB0511BE51654003E39EB /* OLXPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXPhoto.m; path = Entities/OLXPhoto.m; sourceTree = "<group>"; };
+		F0CCB0541BE518AB003E39EB /* OLXResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXResponse.h; path = Entities/OLXResponse.h; sourceTree = "<group>"; };
+		F0CCB0551BE518AB003E39EB /* OLXResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXResponse.m; path = Entities/OLXResponse.m; sourceTree = "<group>"; };
 		F1314E28FC9819C84CB0E625 /* Pods-FixeAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixeAds.release.xcconfig"; path = "Pods/Target Support Files/Pods-FixeAds/Pods-FixeAds.release.xcconfig"; sourceTree = "<group>"; };
 		FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FixeAds.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,15 +145,11 @@
 		F0CCAFB61BE4EFB9003E39EB /* FixeAds */ = {
 			isa = PBXGroup;
 			children = (
-				F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */,
-				F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */,
-				F0CCAFBD1BE4EFB9003E39EB /* ViewController.h */,
-				F0CCAFBE1BE4EFB9003E39EB /* ViewController.m */,
+				F0CCB03A1BE506F5003E39EB /* Service */,
+				F0CCB03E1BE5080D003E39EB /* Entities */,
+				F0CCB0361BE50309003E39EB /* List */,
 				F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */,
-				F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */,
-				F0CCAFC51BE4EFB9003E39EB /* LaunchScreen.storyboard */,
-				F0CCAFC81BE4EFB9003E39EB /* Info.plist */,
-				F0CCAFEA1BE4F068003E39EB /* Podfile */,
+				F0CCAFEC1BE4F1C9003E39EB /* App Delegate */,
 				F0CCAFB71BE4EFB9003E39EB /* Supporting Files */,
 			);
 			path = FixeAds;
@@ -145,6 +159,9 @@
 			isa = PBXGroup;
 			children = (
 				F0CCAFB81BE4EFB9003E39EB /* main.m */,
+				F0CCAFC81BE4EFB9003E39EB /* Info.plist */,
+				F0CCAFC31BE4EFB9003E39EB /* Assets.xcassets */,
+				F0CCAFEA1BE4F068003E39EB /* Podfile */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,6 +182,99 @@
 				F0CCAFDE1BE4EFB9003E39EB /* Info.plist */,
 			);
 			path = FixeAdsUITests;
+			sourceTree = "<group>";
+		};
+		F0CCAFEC1BE4F1C9003E39EB /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */,
+				F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		F0CCB0361BE50309003E39EB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB0371BE5045B003E39EB /* ListingViewController.h */,
+				F0CCB0381BE5045B003E39EB /* ListingViewController.m */,
+				F0CCB0401BE5084B003E39EB /* Cells */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		F0CCB03A1BE506F5003E39EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB03B1BE5071C003E39EB /* OLXService.h */,
+				F0CCB03C1BE5071C003E39EB /* OLXService.m */,
+				F0CCB03F1BE5081B003E39EB /* Mappers */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F0CCB03E1BE5080D003E39EB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB04B1BE510A5003E39EB /* OLX Ad */,
+				F0CCB04F1BE5136A003E39EB /* OLX Ad Parameters */,
+				F0CCB0531BE51864003E39EB /* OLX Photo */,
+				F0CCB0571BE518AE003E39EB /* OLX Response */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		F0CCB03F1BE5081B003E39EB /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mappers;
+			sourceTree = "<group>";
+		};
+		F0CCB0401BE5084B003E39EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB0431BE508E3003E39EB /* ListingCell.h */,
+				F0CCB0441BE508E3003E39EB /* ListingCell.m */,
+				F0CCB0451BE508E3003E39EB /* ListingCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F0CCB04B1BE510A5003E39EB /* OLX Ad */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB0481BE5109F003E39EB /* OLXAd.h */,
+				F0CCB0491BE5109F003E39EB /* OLXAd.m */,
+			);
+			name = "OLX Ad";
+			sourceTree = "<group>";
+		};
+		F0CCB04F1BE5136A003E39EB /* OLX Ad Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB04C1BE51366003E39EB /* OLXParameters.h */,
+				F0CCB04D1BE51366003E39EB /* OLXParameters.m */,
+			);
+			name = "OLX Ad Parameters";
+			sourceTree = "<group>";
+		};
+		F0CCB0531BE51864003E39EB /* OLX Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB0501BE51654003E39EB /* OLXPhoto.h */,
+				F0CCB0511BE51654003E39EB /* OLXPhoto.m */,
+			);
+			name = "OLX Photo";
+			sourceTree = "<group>";
+		};
+		F0CCB0571BE518AE003E39EB /* OLX Response */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB0541BE518AB003E39EB /* OLXResponse.h */,
+				F0CCB0551BE518AB003E39EB /* OLXResponse.m */,
+			);
+			name = "OLX Response";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +382,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0CCAFC71BE4EFB9003E39EB /* LaunchScreen.storyboard in Resources */,
 				F0CCAFC41BE4EFB9003E39EB /* Assets.xcassets in Resources */,
 				F0CCAFEB1BE4F068003E39EB /* Podfile in Resources */,
+				F0CCB0471BE508E3003E39EB /* ListingCell.xib in Resources */,
 				F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,9 +443,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0CCAFBF1BE4EFB9003E39EB /* ViewController.m in Sources */,
+				F0CCB04A1BE5109F003E39EB /* OLXAd.m in Sources */,
+				F0CCB0461BE508E3003E39EB /* ListingCell.m in Sources */,
+				F0CCB0521BE51654003E39EB /* OLXPhoto.m in Sources */,
+				F0CCB0391BE5045B003E39EB /* ListingViewController.m in Sources */,
+				F0CCB0561BE518AC003E39EB /* OLXResponse.m in Sources */,
 				F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */,
+				F0CCB04E1BE51366003E39EB /* OLXParameters.m in Sources */,
 				F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */,
+				F0CCB03D1BE5071C003E39EB /* OLXService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,14 +495,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F0CCAFC51BE4EFB9003E39EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0CCAFC61BE4EFB9003E39EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -426,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -464,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FixeAds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FixeAds/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pt.fixeads.FixeAds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
