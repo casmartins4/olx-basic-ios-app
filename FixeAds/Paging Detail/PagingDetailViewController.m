@@ -7,13 +7,13 @@
 //
 
 #import "PagingDetailViewController.h"
-#import "OLXAd.h"
 #import "OLXManager.h"
+#import "OLXService.h"
 #import "MapViewController.h"
+#import "GalleryViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface PagingDetailViewController ()
-@property (nonatomic, assign) NSInteger currentIndex;
 @property (nonatomic, retain) OLXAd* olxAd;
 @end
 
@@ -28,11 +28,8 @@ static NSString* const TopInfoCellIdentifier = @"TopInfoCellIdentifier";
     // Load view for portrait
     [[NSBundle mainBundle] loadNibNamed:@"PagingDetailPortraitView" owner:self options:nil];
     
-    // Bug in iOS that makes the UIScrollView appear below the top status bar
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    [self setDelegates];
     [self configureActions];
+    [self prepareNextOLXAd];
     [self fillDataWithOLXAd:_olxAd];
 }
 
@@ -48,16 +45,37 @@ static NSString* const TopInfoCellIdentifier = @"TopInfoCellIdentifier";
 }
 
 #pragma mark - Configuration
-- (void)setDelegates {
-    
-}
-
 - (void)configureActions {
+    // Location Tap Gesture
     UITapGestureRecognizer* locationTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(locationViewTapped:)];
     
     [_locationView setUserInteractionEnabled:YES];
     [locationTapRecognizer setNumberOfTapsRequired:1];
     [_locationView addGestureRecognizer:locationTapRecognizer];
+    
+    // Gallery Tap Gesture
+    UITapGestureRecognizer* galleryTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(galleryViewTapped:)];
+    
+    [galleryTapRecognizer setNumberOfTapsRequired:1];
+    [_informationView addGestureRecognizer:galleryTapRecognizer];
+    
+}
+
+- (void)prepareNextOLXAd {
+    // If true, then it's the last OLXAd stored. GET MOOOORE
+    OLXManager* manager = [OLXManager instance];
+    if (_currentIndex == [manager getHighestIndex]) {
+        OLXService* service = [OLXService instance];
+        
+        NSString* nextPageUrl = [manager nextPageUrl];
+        if (nextPageUrl != nil) {
+            [service requestDataWithUrl:nextPageUrl success:^(OLXResponse *olxResponse) {
+                [[OLXManager instance] addNewAds:olxResponse.ads andNextPageUrl:olxResponse.nextPageUrl andResetSource:NO];
+            } failure:^(NSError *error) {
+                
+            }];
+        }
+    }
 }
 
 - (void)fillDataWithOLXAd:(OLXAd*) olxAd {
@@ -87,7 +105,7 @@ static NSString* const TopInfoCellIdentifier = @"TopInfoCellIdentifier";
             
             UIImageView* imageView = [[UIImageView alloc] initWithFrame:imageRect];
             [_imageScrollView addSubview:imageView];
-            
+            [imageView setContentMode:UIViewContentModeScaleAspectFill];
             NSString* photoUrl = [olxAd urlWithOLXPhoto:olxPhoto width:imageRect.size.width andHeight:imageRect.size.height];
             
             [imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl]];
@@ -110,37 +128,59 @@ static NSString* const TopInfoCellIdentifier = @"TopInfoCellIdentifier";
     _locationLabel.text = olxAd.cityLabel;
     _dateLabel.text = olxAd.created;
     
+    _titleLabel.text = olxAd.title;
     _descriptionLabel.text = olxAd.adDescription;
 
 }
 
-
-#pragma mark - UIPageViewController Delegate
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    return viewController;
-}
-
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-    return viewController;
-}
-
-
 #pragma mark - Navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    if ([[segue destinationViewController] isKindOfClass:[MapViewController class]]) {
+//        MapViewController* nextViewController = [segue destinationViewController];
+//        
+//        [nextViewController initializeWithOLXAd:_olxAd];
+//    } else if ([[segue destinationViewController] isKindOfClass:[GalleryViewController class]]) {
+//        GalleryViewController* nextViewController = [segue destinationViewController];
+//        
+//        [nextViewController initializeWithOLXAd:_olxAd];
+//    }
+//}
 
 - (IBAction)backButtonTapped:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)shareButtonTapped:(id)sender {
+    NSURL *url = [NSURL URLWithString:_olxAd.url];
     
+    NSArray *objectsToShare = @[_olxAd.adDescription, url];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    NSArray *excludeActivities = @[UIActivityTypeAirDrop,
+                                   UIActivityTypePrint,
+                                   UIActivityTypeAssignToContact,
+                                   UIActivityTypeSaveToCameraRoll,
+                                   UIActivityTypeAddToReadingList,
+                                   UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    
+    activityVC.excludedActivityTypes = excludeActivities;
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 - (void)locationViewTapped:(id) sender {
-    
+    if ([_segueDelegate respondsToSelector:@selector(shouldDoSegueWithIdentifier:withOLXAd:)]) {
+        [_segueDelegate shouldDoSegueWithIdentifier:@"ShowMapSegue" withOLXAd:_olxAd];
+    }
+}
+
+- (void)galleryViewTapped:(id) sender {
+    if (_olxAd.photos != nil) {
+        if ([_segueDelegate respondsToSelector:@selector(shouldDoSegueWithIdentifier:withOLXAd:)]) {
+            [_segueDelegate shouldDoSegueWithIdentifier:@"ShowGallerySegue" withOLXAd:_olxAd];
+        }
+    }
 }
 @end

@@ -8,7 +8,9 @@
 
 #import "MapViewController.h"
 
+
 @interface MapViewController ()
+@property (strong, retain) OLXAd* currentOLXAd;
 
 @end
 
@@ -16,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [[NSBundle mainBundle] loadNibNamed:@"MapPortraitView" owner:self options:nil];
+    
+    [self configureMap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +28,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Segue initializers
+- (void)initializeWithOLXAd:(OLXAd*) olxAd {
+    _currentOLXAd = olxAd;
 }
-*/
+
+#pragma mark - Map Configuration
+- (void)configureMap {
+    // Zoom Location
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = [_currentOLXAd.mapLatitude floatValue];
+    zoomLocation.longitude= [_currentOLXAd.mapLongitude floatValue];
+    
+    // View Region
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 20000, 20000);
+    [_mapView setRegion:viewRegion animated:YES];
+    
+    // Add annotation to mark the place
+//    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+//    [annotation setCoordinate:zoomLocation];
+//    [self.mapView addAnnotation:annotation];
+    
+    MKCircle *circle = [MKCircle circleWithCenterCoordinate:zoomLocation radius:1000];
+    [self.mapView addOverlay:circle];
+}
+
+- (MKOverlayView *)mapView:(MKMapView *)map viewForOverlay:(id <MKOverlay>)overlay
+{
+    MKCircleView *circleView = [[MKCircleView alloc] initWithOverlay:overlay];
+    circleView.strokeColor = [UIColor redColor];
+    circleView.fillColor = [[UIColor redColor] colorWithAlphaComponent:0.4];
+    return circleView;
+}
+
+#pragma mark - Navigation 
+- (IBAction)backButtonTapped:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

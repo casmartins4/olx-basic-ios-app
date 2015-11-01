@@ -37,7 +37,7 @@ NSString* nextPageUrl;
     return dataSource;
 }
 
-- (void) addNewAds:(NSArray*) olxAds andNextPageUrl:(NSString*) pageUrl andResetSource:(BOOL) reset {
+- (void)addNewAds:(NSArray*) olxAds andNextPageUrl:(NSString*) pageUrl andResetSource:(BOOL) reset {
     if (reset) {
         dataSource = [[NSMutableArray alloc] initWithCapacity:olxAds.count];
     }
@@ -46,12 +46,20 @@ NSString* nextPageUrl;
     nextPageUrl = pageUrl;
 }
 
-- (OLXAd*) dataElementForIndex:(NSInteger) index {
+- (OLXAd*)dataElementForIndex:(NSInteger) index {
     if (dataSource != nil && index >= 0 && index < dataSource.count) {
         return [dataSource objectAtIndex:index];
     }
     
     return nil;
+}
+
+- (NSInteger)getHighestIndex {
+    return dataSource.count - 1;
+}
+
+- (NSString*)nextPageUrl {
+    return nextPageUrl;
 }
 
 @end

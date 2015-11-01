@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "OLXAd.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController<MKMapViewDelegate>
+
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
+- (void)initializeWithOLXAd:(OLXAd*) olxAd;
+
+#pragma mark - Back Button Tapped
+- (IBAction)backButtonTapped:(id)sender;
 
 @end

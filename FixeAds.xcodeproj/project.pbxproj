@@ -13,6 +13,9 @@
 		F0982EEA1BE667C700798E29 /* PagingDetailPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0982EE91BE667C700798E29 /* PagingDetailPortraitView.xib */; settings = {ASSET_TAGS = (); }; };
 		F0982EEF1BE6775200798E29 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0982EED1BE6775200798E29 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F0982EF01BE6775200798E29 /* MapPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0982EEE1BE6775200798E29 /* MapPortraitView.xib */; settings = {ASSET_TAGS = (); }; };
+		F0982EF51BE6839500798E29 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0982EF41BE6839500798E29 /* GalleryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F0982EF81BE683B300798E29 /* GalleryPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0982EF71BE683B300798E29 /* GalleryPortraitView.xib */; settings = {ASSET_TAGS = (); }; };
+		F0982EFD1BE69F7600798E29 /* PagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0982EFC1BE69F7600798E29 /* PagingViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFB81BE4EFB9003E39EB /* main.m */; };
 		F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */; };
 		F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */; };
@@ -59,6 +62,11 @@
 		F0982EEC1BE6775200798E29 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = "Map View/MapViewController.h"; sourceTree = "<group>"; };
 		F0982EED1BE6775200798E29 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = "Map View/MapViewController.m"; sourceTree = "<group>"; };
 		F0982EEE1BE6775200798E29 /* MapPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapPortraitView.xib; path = "Map View/MapPortraitView.xib"; sourceTree = "<group>"; };
+		F0982EF31BE6839500798E29 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryViewController.h; path = "Gallery View/GalleryViewController.h"; sourceTree = "<group>"; };
+		F0982EF41BE6839500798E29 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryViewController.m; path = "Gallery View/GalleryViewController.m"; sourceTree = "<group>"; };
+		F0982EF71BE683B300798E29 /* GalleryPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GalleryPortraitView.xib; path = "Gallery View/Views/GalleryPortraitView.xib"; sourceTree = "<group>"; };
+		F0982EFB1BE69F7600798E29 /* PagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PagingViewController.h; path = "Page Controller/PagingViewController.h"; sourceTree = "<group>"; };
+		F0982EFC1BE69F7600798E29 /* PagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PagingViewController.m; path = "Page Controller/PagingViewController.m"; sourceTree = "<group>"; };
 		F0CCAFB41BE4EFB9003E39EB /* FixeAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixeAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CCAFB81BE4EFB9003E39EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,8 +159,8 @@
 		F0982ED91BE63F8100798E29 /* Paging Detail */ = {
 			isa = PBXGroup;
 			children = (
-				F0982EDA1BE63FC700798E29 /* PagingDetailViewController.h */,
-				F0982EDB1BE63FC700798E29 /* PagingDetailViewController.m */,
+				F0982EFA1BE69F3B00798E29 /* Page Controller */,
+				F0982EF91BE69F2F00798E29 /* Detail View */,
 				F0982EDD1BE64A3C00798E29 /* Views */,
 			);
 			name = "Paging Detail";
@@ -182,6 +190,42 @@
 				F0982EEE1BE6775200798E29 /* MapPortraitView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F0982EF21BE6837C00798E29 /* Gallery View */ = {
+			isa = PBXGroup;
+			children = (
+				F0982EF31BE6839500798E29 /* GalleryViewController.h */,
+				F0982EF41BE6839500798E29 /* GalleryViewController.m */,
+				F0982EF61BE6839900798E29 /* Views */,
+			);
+			name = "Gallery View";
+			sourceTree = "<group>";
+		};
+		F0982EF61BE6839900798E29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0982EF71BE683B300798E29 /* GalleryPortraitView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F0982EF91BE69F2F00798E29 /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				F0982EDA1BE63FC700798E29 /* PagingDetailViewController.h */,
+				F0982EDB1BE63FC700798E29 /* PagingDetailViewController.m */,
+			);
+			name = "Detail View";
+			sourceTree = "<group>";
+		};
+		F0982EFA1BE69F3B00798E29 /* Page Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0982EFB1BE69F7600798E29 /* PagingViewController.h */,
+				F0982EFC1BE69F7600798E29 /* PagingViewController.m */,
+			);
+			name = "Page Controller";
 			sourceTree = "<group>";
 		};
 		F0CCAFAB1BE4EFB9003E39EB = {
@@ -216,6 +260,7 @@
 				F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */,
 				F0982ED91BE63F8100798E29 /* Paging Detail */,
 				F0982EEB1BE6770D00798E29 /* Map View */,
+				F0982EF21BE6837C00798E29 /* Gallery View */,
 				F0CCAFEC1BE4F1C9003E39EB /* App Delegate */,
 				F0CCAFB71BE4EFB9003E39EB /* Supporting Files */,
 			);
@@ -474,6 +519,7 @@
 				F0CCAFEB1BE4F068003E39EB /* Podfile in Resources */,
 				F0982EEA1BE667C700798E29 /* PagingDetailPortraitView.xib in Resources */,
 				F0CCB0471BE508E3003E39EB /* ListingCell.xib in Resources */,
+				F0982EF81BE683B300798E29 /* GalleryPortraitView.xib in Resources */,
 				F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +584,7 @@
 				F0CCB0521BE51654003E39EB /* OLXPhoto.m in Sources */,
 				F0982EDC1BE63FC700798E29 /* PagingDetailViewController.m in Sources */,
 				F0CCB0391BE5045B003E39EB /* ListingViewController.m in Sources */,
+				F0982EFD1BE69F7600798E29 /* PagingViewController.m in Sources */,
 				F0CCB0561BE518AC003E39EB /* OLXResponse.m in Sources */,
 				F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */,
 				F0CCB05D1BE521A1003E39EB /* OLXAdMapper.m in Sources */,
@@ -546,6 +593,7 @@
 				F0CCB03D1BE5071C003E39EB /* OLXService.m in Sources */,
 				F0CCB05A1BE51DFE003E39EB /* OLXResponseMapper.m in Sources */,
 				F0982EEF1BE6775200798E29 /* MapViewController.m in Sources */,
+				F0982EF51BE6839500798E29 /* GalleryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

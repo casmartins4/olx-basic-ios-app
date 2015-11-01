@@ -49,7 +49,7 @@ NSString* urlToShare;
     _labelLocation.text = olxAd.cityLabel;
     _labelDate.text = olxAd.created;
     
-    _labelDescription.text = olxAd.adDescription;
+    _labelDescription.text = olxAd.title;
 }
 
 - (IBAction)shareButtonPressed:(id)sender {
@@ -90,6 +90,7 @@ NSString* urlToShare;
             
             UIImageView* imageView = [[UIImageView alloc] initWithFrame:imageRect];
             [_imageScrollView addSubview:imageView];
+            [imageView setContentMode:UIViewContentModeScaleAspectFill];
             
             NSString* photoUrl = [olxAd urlWithOLXPhoto:olxPhoto width:imageRect.size.width andHeight:imageRect.size.height];
             
