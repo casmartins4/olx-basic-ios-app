@@ -257,11 +257,11 @@
 				F0CCB03A1BE506F5003E39EB /* Service */,
 				F0CCB03E1BE5080D003E39EB /* Entities */,
 				F0CCB0361BE50309003E39EB /* Listing */,
-				F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */,
 				F0982ED91BE63F8100798E29 /* Paging Detail */,
 				F0982EEB1BE6770D00798E29 /* Map View */,
 				F0982EF21BE6837C00798E29 /* Gallery View */,
 				F0CCAFEC1BE4F1C9003E39EB /* App Delegate */,
+				F0DB94741BE6B1C900363215 /* Storyboards */,
 				F0CCAFB71BE4EFB9003E39EB /* Supporting Files */,
 			);
 			path = FixeAds;
@@ -407,6 +407,14 @@
 				F0CCB05C1BE521A1003E39EB /* OLXAdMapper.m */,
 			);
 			name = "OLXAd MApper";
+			sourceTree = "<group>";
+		};
+		F0DB94741BE6B1C900363215 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

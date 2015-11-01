@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="1" width="600" height="260"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SRZ-Kh-4ub" id="6mU-Qc-P14">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -51,6 +51,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JAV-wO-RDf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FSg-aC-BJP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,6 +70,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7sv-Dw-Mk3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VOH-KP-uGA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,7 +89,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QBM-jM-Eg7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="75x-hS-Zog">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
