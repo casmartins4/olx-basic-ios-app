@@ -9,17 +9,17 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ListingViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" id="dGe-bH-Z5C">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="260" sectionHeaderHeight="1" sectionFooterHeight="1" id="dGe-bH-Z5C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SRZ-Kh-4ub">
-                                <rect key="frame" x="0.0" y="28" width="600" height="130"/>
+                                <rect key="frame" x="0.0" y="1" width="600" height="260"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SRZ-Kh-4ub" id="6mU-Qc-P14">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>

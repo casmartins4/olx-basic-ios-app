@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04B07C24A4EF402ABEFCD486 /* libPods-FixeAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6AC322881DE4D27ABB25D6 /* libPods-FixeAds.a */; };
+		F0982ED81BE5889500798E29 /* OLXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0982ED71BE5889500798E29 /* OLXManager.m */; settings = {ASSET_TAGS = (); }; };
 		F0CCAFB91BE4EFB9003E39EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFB81BE4EFB9003E39EB /* main.m */; };
 		F0CCAFBC1BE4EFB9003E39EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CCAFBB1BE4EFB9003E39EB /* AppDelegate.m */; };
 		F0CCAFC21BE4EFB9003E39EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		2D78542C9F9A82DD0E7DB562 /* Pods-FixeAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixeAds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FixeAds/Pods-FixeAds.debug.xcconfig"; sourceTree = "<group>"; };
+		F0982ED61BE5889500798E29 /* OLXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OLXManager.h; path = "Data Manager/OLXManager.h"; sourceTree = "<group>"; };
+		F0982ED71BE5889500798E29 /* OLXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OLXManager.m; path = "Data Manager/OLXManager.m"; sourceTree = "<group>"; };
 		F0CCAFB41BE4EFB9003E39EB /* FixeAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixeAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CCAFB81BE4EFB9003E39EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0CCAFBA1BE4EFB9003E39EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F0982ED51BE5885B00798E29 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F0982ED61BE5889500798E29 /* OLXManager.h */,
+				F0982ED71BE5889500798E29 /* OLXManager.m */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
 		F0CCAFAB1BE4EFB9003E39EB = {
 			isa = PBXGroup;
 			children = (
@@ -151,9 +163,10 @@
 		F0CCAFB61BE4EFB9003E39EB /* FixeAds */ = {
 			isa = PBXGroup;
 			children = (
+				F0982ED51BE5885B00798E29 /* Data Manager */,
 				F0CCB03A1BE506F5003E39EB /* Service */,
 				F0CCB03E1BE5080D003E39EB /* Entities */,
-				F0CCB0361BE50309003E39EB /* List */,
+				F0CCB0361BE50309003E39EB /* Listing */,
 				F0CCAFC01BE4EFB9003E39EB /* Main.storyboard */,
 				F0CCAFEC1BE4F1C9003E39EB /* App Delegate */,
 				F0CCAFB71BE4EFB9003E39EB /* Supporting Files */,
@@ -199,14 +212,14 @@
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
-		F0CCB0361BE50309003E39EB /* List */ = {
+		F0CCB0361BE50309003E39EB /* Listing */ = {
 			isa = PBXGroup;
 			children = (
 				F0CCB0371BE5045B003E39EB /* ListingViewController.h */,
 				F0CCB0381BE5045B003E39EB /* ListingViewController.m */,
 				F0CCB0401BE5084B003E39EB /* Cells */,
 			);
-			name = List;
+			name = Listing;
 			sourceTree = "<group>";
 		};
 		F0CCB03A1BE506F5003E39EB /* Service */ = {
@@ -233,10 +246,8 @@
 		F0CCB03F1BE5081B003E39EB /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
-				F0CCB0581BE51DFE003E39EB /* OLXResponseMapper.h */,
-				F0CCB0591BE51DFE003E39EB /* OLXResponseMapper.m */,
-				F0CCB05B1BE521A1003E39EB /* OLXAdMapper.h */,
-				F0CCB05C1BE521A1003E39EB /* OLXAdMapper.m */,
+				F0CCB05E1BE54E71003E39EB /* OLXResponse Mapper */,
+				F0CCB05F1BE54E7E003E39EB /* OLXAd MApper */,
 			);
 			name = Mappers;
 			sourceTree = "<group>";
@@ -285,6 +296,24 @@
 				F0CCB0551BE518AB003E39EB /* OLXResponse.m */,
 			);
 			name = "OLX Response";
+			sourceTree = "<group>";
+		};
+		F0CCB05E1BE54E71003E39EB /* OLXResponse Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB0581BE51DFE003E39EB /* OLXResponseMapper.h */,
+				F0CCB0591BE51DFE003E39EB /* OLXResponseMapper.m */,
+			);
+			name = "OLXResponse Mapper";
+			sourceTree = "<group>";
+		};
+		F0CCB05F1BE54E7E003E39EB /* OLXAd MApper */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCB05B1BE521A1003E39EB /* OLXAdMapper.h */,
+				F0CCB05C1BE521A1003E39EB /* OLXAdMapper.m */,
+			);
+			name = "OLXAd MApper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CCB04A1BE5109F003E39EB /* OLXAd.m in Sources */,
+				F0982ED81BE5889500798E29 /* OLXManager.m in Sources */,
 				F0CCB0461BE508E3003E39EB /* ListingCell.m in Sources */,
 				F0CCB0521BE51654003E39EB /* OLXPhoto.m in Sources */,
 				F0CCB0391BE5045B003E39EB /* ListingViewController.m in Sources */,

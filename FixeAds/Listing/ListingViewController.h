@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ListingCell.h"
 
-@interface ListingViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface ListingViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, ListingCellDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *listingTableView;
 

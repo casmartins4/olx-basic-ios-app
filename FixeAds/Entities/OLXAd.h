@@ -68,7 +68,10 @@
 @property (nonatomic, retain) NSArray* photos;
 
 #pragma mark - Photo url builders
-- (NSString*) urlWithOLXPhoto:(OLXPhoto*) olxPhoto width:(NSInteger) width andHeight:(NSInteger) height;
+- (NSString*) urlWithOLXPhoto:(OLXPhoto*) olxPhoto
+                        width:(NSInteger) width
+                    andHeight:(NSInteger) height;
+
 - (NSString*) urlWithOLXPhoto:(OLXPhoto*) olxPhoto;
 
 @end

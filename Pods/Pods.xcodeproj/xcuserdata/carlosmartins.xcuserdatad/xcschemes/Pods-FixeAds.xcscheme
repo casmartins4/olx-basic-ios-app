@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "99792B01160E34FE38C89865"
+               BlueprintIdentifier = "7BF7EEEB082D4EE6642ED797"
                BuildableName = "libPods-FixeAds.a"
                BlueprintName = "Pods-FixeAds"
                ReferencedContainer = "container:Pods.xcodeproj">
