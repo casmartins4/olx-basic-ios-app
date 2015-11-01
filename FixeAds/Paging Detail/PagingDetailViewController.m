@@ -134,18 +134,6 @@ static NSString* const TopInfoCellIdentifier = @"TopInfoCellIdentifier";
 }
 
 #pragma mark - Navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([[segue destinationViewController] isKindOfClass:[MapViewController class]]) {
-//        MapViewController* nextViewController = [segue destinationViewController];
-//        
-//        [nextViewController initializeWithOLXAd:_olxAd];
-//    } else if ([[segue destinationViewController] isKindOfClass:[GalleryViewController class]]) {
-//        GalleryViewController* nextViewController = [segue destinationViewController];
-//        
-//        [nextViewController initializeWithOLXAd:_olxAd];
-//    }
-//}
-
 - (IBAction)backButtonTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

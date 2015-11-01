@@ -11,7 +11,7 @@
 #import "OLXService.h"
 #import "SVPullToRefresh.h"
 #import "OLXManager.h"
-#import "PagingDetailViewController.h"
+#import "PagingViewController.h"
 
 @interface ListingViewController ()
 @property (nonatomic, retain) OLXResponse* currentResponse;
@@ -63,7 +63,7 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
 - (void)callOLXServiceWithUrl:(NSString*) url andResetDataSource:(BOOL) reset {
     OLXService* service = [OLXService instance];
     
-    [service requestDataWithUrl:nil success:^(OLXResponse *olxResponse) {
+    [service requestDataWithUrl:url success:^(OLXResponse *olxResponse) {
         [[OLXManager instance] addNewAds:olxResponse.ads andNextPageUrl:olxResponse.nextPageUrl andResetSource:reset];
         [_listingTableView reloadData];
         
@@ -81,7 +81,7 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
 }
 
 - (void)infiniteScrollTriggered {
-    [self callOLXServiceWithUrl:_currentResponse.nextPageUrl andResetDataSource:NO];
+    [self callOLXServiceWithUrl:[[OLXManager instance] nextPageUrl] andResetDataSource:NO];
 }
 
 #pragma mark - Listing Cell Delegate
@@ -134,8 +134,8 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath* selectedIndexPath = [_listingTableView indexPathForSelectedRow];
     
-    if ([[segue destinationViewController] isKindOfClass:[PagingDetailViewController class]]) {
-        PagingDetailViewController* nextViewController = (PagingDetailViewController*) [segue destinationViewController];
+    if ([[segue destinationViewController] isKindOfClass:[PagingViewController class]]) {
+        PagingViewController* nextViewController = (PagingViewController*) [segue destinationViewController];
         
         [nextViewController initWithIndexForData:selectedIndexPath.row];
     }

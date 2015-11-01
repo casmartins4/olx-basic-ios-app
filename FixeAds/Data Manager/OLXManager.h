@@ -15,7 +15,6 @@
 
 - (NSMutableArray*)dataSource;
 - (void)addNewAds:(NSArray*) olxAds andNextPageUrl:(NSString*) pageUrl andResetSource:(BOOL) reset;
-
 - (OLXAd*)dataElementForIndex:(NSInteger) index;
 - (NSInteger)getHighestIndex;
 - (NSString*)nextPageUrl;

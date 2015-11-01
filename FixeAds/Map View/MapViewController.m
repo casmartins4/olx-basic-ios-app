@@ -44,11 +44,6 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 20000, 20000);
     [_mapView setRegion:viewRegion animated:YES];
     
-    // Add annotation to mark the place
-//    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-//    [annotation setCoordinate:zoomLocation];
-//    [self.mapView addAnnotation:annotation];
-    
     MKCircle *circle = [MKCircle circleWithCenterCoordinate:zoomLocation radius:1000];
     [self.mapView addOverlay:circle];
 }

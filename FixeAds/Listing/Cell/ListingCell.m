@@ -23,7 +23,6 @@ NSString* urlToShare;
     // Without this the scrollview gains control over the UITableView's didSelectRowAtIndexPath delegate method
     [_imageScrollView setUserInteractionEnabled:NO];
     [self.contentView addGestureRecognizer:_imageScrollView.panGestureRecognizer];
-    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -103,11 +102,5 @@ NSString* urlToShare;
     }
 }
 
-//- (void) scrollViewDidScroll:(UIScrollView *)sender {
-//    // Update the page when more than 50% of the previous/next page is visible
-//    CGFloat pageWidth = _imageScrollView.frame.size.width;
-//    int page = floor((_imageScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-//    //self.pageControl.currentPage = page;
-//}
 
 @end

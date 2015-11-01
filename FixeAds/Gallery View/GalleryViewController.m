@@ -61,29 +61,6 @@
         
         accumulatedHeight += 300 + 10;
     }
-    
-    
-    /*
-    [_imageScrollView setContentSize:CGSizeMake(sizeOfScreen.width*_currentOLXAd.photos.count, _imageScrollView.frame.size.height)];
-    
-    CGFloat accumulatedWidth;
-    
-    for (int i = 0; i < _currentOLXAd.photos.count; i++) {
-        OLXPhoto* olxPhoto = [_currentOLXAd.photos objectAtIndex:i];
-        
-        CGRect imageRect = CGRectMake(i*sizeOfScreen.width,
-                                      0,
-                                      sizeOfScreen.width,
-                                      _imageScrollView.frame.size.height);
-        
-        UIImageView* imageView = [[UIImageView alloc] initWithFrame:imageRect];
-        
-        [_imageScrollView addSubview:imageView];
-        
-        NSString* photoUrl = [_currentOLXAd urlWithOLXPhoto:olxPhoto];
-        
-        [imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl]];
-    }*/
 }
 
 - (void)initializeWithOLXAd:(OLXAd*) olxAd {
