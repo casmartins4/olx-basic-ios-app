@@ -11,6 +11,7 @@
 #import "OLXService.h"
 #import "SVPullToRefresh.h"
 #import "OLXManager.h"
+#import "PagingDetailViewController.h"
 
 @interface ListingViewController ()
 @property (nonatomic, retain) OLXResponse* currentResponse;
@@ -23,7 +24,7 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
 #pragma mark - Life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     [self configureTableView];
     [self registerNibs];
     [self initialServiceRequest];
@@ -33,16 +34,6 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
     [super didReceiveMemoryWarning];
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 #pragma mark - Configuration
 
 - (void) configureTableView {
@@ -50,12 +41,12 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
     
     // Sets pull to refresh action handler
     [_listingTableView addPullToRefreshWithActionHandler:^{
-        [weakSelf insertRowAtTop];
+        [weakSelf pullToRefreshTriggered];
     }];
     
     // Sets infinite scroll action handler
     [_listingTableView addInfiniteScrollingWithActionHandler:^{
-        [weakSelf insertRowAtBottom];
+        [weakSelf infiniteScrollTriggered];
     }];
 }
 
@@ -85,11 +76,11 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
 }
 
 #pragma mark - Pull to refresh and Infinite Scroll
-- (void)insertRowAtTop {
+- (void)pullToRefreshTriggered {
     [self callOLXServiceWithUrl:nil andResetDataSource:YES];
 }
 
-- (void)insertRowAtBottom {
+- (void)infiniteScrollTriggered {
     [self callOLXServiceWithUrl:_currentResponse.nextPageUrl andResetDataSource:NO];
 }
 
@@ -121,13 +112,32 @@ static NSString* const CellIdentifier = @"ListingCellIdentifier";
 
 // Cell at index path
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     ListingCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    [cell setCellDelegate:self];
+    
+    if (cell == nil) {
+        cell = [[ListingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     
     OLXAd* olxAd = [[OLXManager instance] dataElementForIndex:indexPath.row];
+    [cell setCellDelegate:self];
     [cell configureWithOLXAd:olxAd];
-    
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"ShowDetailSegue" sender:self];
+}
+
+
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath* selectedIndexPath = [_listingTableView indexPathForSelectedRow];
+    
+    if ([[segue destinationViewController] isKindOfClass:[PagingDetailViewController class]]) {
+        PagingDetailViewController* nextViewController = (PagingDetailViewController*) [segue destinationViewController];
+        
+        [nextViewController initWithIndexForData:selectedIndexPath.row];
+    }
+}
 @end

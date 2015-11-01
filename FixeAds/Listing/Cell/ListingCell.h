@@ -20,7 +20,11 @@
 
 @property (nonatomic, weak) id<ListingCellDelegate> cellDelegate;
 
+@property (strong, nonatomic) IBOutlet UIView *viewNoImage;
+
 @property (strong, nonatomic) IBOutlet UIScrollView *imageScrollView;
+
+@property (strong, nonatomic) IBOutlet UIView *informationView;
 
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageBackground;
