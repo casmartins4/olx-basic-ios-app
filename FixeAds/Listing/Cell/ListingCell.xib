@@ -14,10 +14,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="420" height="199"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad-background-test" translatesAutoresizingMaskIntoConstraints="NO" id="1dU-xA-Tf3">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dU-xA-Tf3">
                         <rect key="frame" x="0.0" y="0.0" width="420" height="200"/>
                         <animations/>
                     </imageView>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgG-2I-84S">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="199"/>
+                        <animations/>
+                    </scrollView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0q-Oa-fBX">
                         <rect key="frame" x="0.0" y="99" width="420" height="100"/>
                         <subviews>
@@ -132,15 +136,20 @@
                     <constraint firstItem="1dU-xA-Tf3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="39B-HJ-FAN"/>
                     <constraint firstAttribute="bottom" secondItem="C0q-Oa-fBX" secondAttribute="bottom" id="EV1-RL-Giq"/>
                     <constraint firstItem="1dU-xA-Tf3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jej-dl-GD8"/>
+                    <constraint firstItem="KgG-2I-84S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lwb-3o-vAt"/>
                     <constraint firstAttribute="bottom" secondItem="1dU-xA-Tf3" secondAttribute="bottom" constant="-1" id="bb3-CA-Sid"/>
                     <constraint firstAttribute="trailing" secondItem="1dU-xA-Tf3" secondAttribute="trailing" id="d0T-25-9XX"/>
                     <constraint firstAttribute="trailing" secondItem="C0q-Oa-fBX" secondAttribute="trailing" id="foi-Zk-g6g"/>
+                    <constraint firstAttribute="bottom" secondItem="KgG-2I-84S" secondAttribute="bottom" id="pZB-Ye-0ea"/>
+                    <constraint firstAttribute="trailing" secondItem="KgG-2I-84S" secondAttribute="trailing" id="vsd-h7-P0h"/>
                     <constraint firstItem="C0q-Oa-fBX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xnh-aM-r0U"/>
+                    <constraint firstItem="KgG-2I-84S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yEi-R2-WSI"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
             <connections>
                 <outlet property="imageBackground" destination="1dU-xA-Tf3" id="9ZM-F8-FMg"/>
+                <outlet property="imageScrollView" destination="KgG-2I-84S" id="zEd-eE-qeH"/>
                 <outlet property="labelDate" destination="XJT-ff-4JH" id="cYS-nD-mx2"/>
                 <outlet property="labelDescription" destination="nin-4i-jjR" id="jgU-Lu-djk"/>
                 <outlet property="labelLocation" destination="1eh-m5-Wmm" id="WZR-fl-95T"/>
@@ -152,7 +161,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="ad-background-test" width="682" height="455"/>
         <image name="clock" width="42" height="42"/>
         <image name="geo-pointer" width="42" height="42"/>
         <image name="share" width="42" height="42"/>

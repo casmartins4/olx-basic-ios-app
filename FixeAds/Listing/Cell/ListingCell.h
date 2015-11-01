@@ -16,9 +16,12 @@
 
 @end
 
-@interface ListingCell : UITableViewCell
+@interface ListingCell : UITableViewCell<UIScrollViewDelegate>
 
 @property (nonatomic, weak) id<ListingCellDelegate> cellDelegate;
+
+@property (strong, nonatomic) IBOutlet UIScrollView *imageScrollView;
+
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageBackground;
 
